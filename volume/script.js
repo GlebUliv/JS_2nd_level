@@ -31,14 +31,4 @@ function down() {
 
 function change() {
 
-    let rng = document.querySelector('#player>.controls [type=range]')
-    let txt = document.querySelector('.player [type=text]')
-
-    rng.addEventListener('input', () =>
-        txt.value = rng.value
-    )
-    txt.addEventListener('input', () =>
-        rng.value = txt.value
-    )
-
 }
